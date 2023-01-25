@@ -1,5 +1,5 @@
 def output = 'Maven'
-def x = '10'
+def x = '1010'
 pipeline {
     agent any
     
@@ -11,7 +11,7 @@ pipeline {
         }
         stage('Hello') {
             steps {
-                echo "Hello World ${output}"
+                echo "Hello ci/cd World ${output}"
             }
         }
         stage('sample-test') {
